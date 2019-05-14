@@ -1,0 +1,76 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone {
+    height: 420px;
+    width: 200px;
+    border-radius: 30px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #c79877 0px 0px 2px 2px, 
+        rgba(0,0,0,0.7) 0px 0px 0px 3px, 
+        rgba(150, 150, 150, 0.6) -3px 0px 3px inset, 
+        rgba(255, 255, 255, 0.4) 3px 0px 3px inset, 
+        rgba(255, 255, 255, 0.4) 0px -1px 2px inset, 
+        rgba(90, 90, 90, 0.6) 0px 1px 1px inset,
+        rgba(0, 0, 0, 0.19) 0px 30px 60px;
+}
+
+.screen {
+    position: relative;
+    height: 400px;
+    width: 180px;
+    border-radius: 22px;
+    background: linear-gradient(110deg, blue,red);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.notch-section {
+    position: absolute;
+    top: 0px;
+    height: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notch {
+    position: relative;
+    height: 100%;
+    width: 55%;
+    background: black;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.speaker {
+    width: 30px;
+    height: 3px;
+    margin-top: 3px;
+    border-radius: 1.5px;
+    background: rgba(250,250,250,0.1);
+}
+
+.camera {
+    position: absolute;
+    top: 2px;
+    right: 20%;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    border: 1px rgb(20,20,20) solid;
+    background: linear-gradient(180deg, #0845a8, black);
+}
